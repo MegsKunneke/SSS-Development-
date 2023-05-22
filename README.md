@@ -1,11 +1,6 @@
 Seeed Stock Sync App
-The Seeed Stock Sync App is a Ruby on Rails application that retrieves product information from an API and displays it in a user-friendly format. The app fetches product data from the API, processes it, and presents it to the user in an organized manner.
+The Seeed Stock Sync App is a Ruby on Rails application that retrieves product information from the Seeed API and displays it in a user-friendly format. The app fetches product data from the API, processes it, and presents it to the user in an organized manner.
 
-Features
-Fetches product information from the Seeed API.
-Displays product details, such as name, price, description, and availability.
-Allows users to search for specific products by name or category.
-Provides a user-friendly interface to browse and explore the available products.
 Installation
 To run the Seeed Stock Sync App locally on your machine, follow these steps:
 
@@ -13,23 +8,24 @@ Clone the repository:
 
 bash
 Copy code
-git clone <repository-url>
-Replace <repository-url> with the URL of your GitHub repository.
-
+git clone https://github.com/MegsKunneke/Seeed-Stock-Sync.git
 Install the required dependencies using Bundler:
 
+bash
 Copy code
+cd Seeed-Stock-Sync
 bundle install
 Set up the database:
 
-arduino
+bash
 Copy code
 rails db:setup
-Start the Rails server:
+Start the Rails server on port 1812:
 
+bash
 Copy code
-rails s
-Open your web browser and visit http://localhost:3000 to access the Seeed Stock Sync App.
+rails s -p 1812
+Open your web browser and visit http://localhost:1812 to access the Seeed Stock Sync App.
 
 Configuration
 To configure the app, you may need to update the API credentials or adjust other settings. The configuration files can be found in the config/ directory.
@@ -48,6 +44,10 @@ Contributions to the Seeed Stock Sync App are welcome! If you encounter any issu
 License
 This project is licensed under the MIT License.
 
-Feel free to update this README file to provide more specific information about your app, such as installation instructions, usage examples, or additional features. Make sure to replace <repository-url> with the actual URL of your GitHub repository.
+Feel free to update this README file to provide more specific information about your app, such as usage examples or additional features.
 
-I hope this helps you create a clear and informative README for your app! Let me know if you have any further questions.
+To achieve the desired formatting:
+
+Use a single # character for the main heading to make it larger.
+Place each step under the installation section in a separate set of triple backticks (```) to format it as a code block.
+By following these formatting guidelines, you can create a clear and visually appealing README file. Let me know if you have any further questions!
