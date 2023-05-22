@@ -13,6 +13,11 @@ To run the Seeed Stock Sync App locally on your machine, follow these steps:
 
 2. **Install the required dependencies using Bundler:**
 
-  ```bash
-  cd Seeed-Stock-Sync
-  bundle install
+   ```bash
+   cd Seeed-Stock-Sync
+   bundle install
+   
+ 3. **Set up the database:**
+ 
+   ```bash
+   rails db:setup
