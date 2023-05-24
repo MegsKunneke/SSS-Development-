@@ -7,38 +7,34 @@ Installation
 To run the Seeed Stock Sync App locally on your machine, follow these steps:
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/MegsKunneke/Seeed-Stock-Sync.git
 
 2. Install the required dependencies using Bundler:
+   cd Seeed-Stock-Sync
+   bundle install
 
-   ```bash
-      cd Seeed-Stock-Sync
-      bundle install
-   
- 3. Set up the database:
- 
-    ```bash
-      rails db:setup
-      
- 4. Start the Rails server on port 1812:
+3. Set up the database:
+   rails db:setup
 
-    ```bash
-      rails s -p 1812
-      
- 5. Open your web browser and visit http://localhost:1812 to access the Seeed Stock Sync App.
+4. Start the Rails server:
+   rails server
+
+5. Open your web browser and visit http://localhost:3000 to access the Seeed Stock Sync App.
 
 Configuration
+
 To configure the app, you may need to update the API credentials or adjust other settings. The configuration files can be found in the config/ directory.
 
-#Dependencies
+Dependencies
+
 The Seeed Stock Sync App relies on the following key dependencies:
 
-Ruby version: 3.0.3
-Rails version: 6.1.4
-Other dependencies specified in the Gemfile
+- Ruby version: 3.0.3
+- Rails version: 6.1.4
+- Other dependencies specified in the Gemfile
+
 Please ensure that you have the correct versions of Ruby and Rails installed, as specified in the Gemfile.
 
 Contributing
+
 Contributions to the Seeed Stock Sync App are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
