@@ -1,4 +1,4 @@
-# Seeed Stock Sync App
+**# Seeed Stock Sync App
 
 The Seeed Stock Sync App is a Ruby on Rails application that retrieves product information from the Seeed API and displays it in a user-friendly format. The app fetches product data from the API, processes it, and presents it to the user in an organized manner.
 
@@ -44,3 +44,4 @@ Please ensure that you have the correct versions of Ruby and Rails installed, as
 Contributions to the Seeed Stock Sync App are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 
+**
