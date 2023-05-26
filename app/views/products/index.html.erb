@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Seeed Product API: Responses</h1>
+  <h1>Shopify api version</h1>
   <p>Status: <%= @status %></p>
 
   <!-- Search Form -->
@@ -30,6 +30,7 @@
           <th>EUCA Price</th>
           <th>ROI (21.50)</th>
           <th>Seeed Stock</th>
+          <th>Stock</th>
         </tr>
       </thead>
       <tbody>
@@ -45,6 +46,7 @@
             <td style="color: <%= product['in_stock_qty'].to_i.zero? ? 'red' : 'green' %>;">
               <%= product['in_stock_qty'] %>
             </td>
+            <td><%= StockChecker.check_stock(product) %></td> 
           </tr>
         <% end %>
       </tbody>

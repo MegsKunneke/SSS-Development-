@@ -44,6 +44,18 @@ offset = params[:offset].to_i + 1 # Increment the offset by 1
   end
 end
 
+def inventory_status
+    shopify_api = ShopifyAPI.new
+    shopify_product = shopify_api.get_product(self.sku)
+    if shopify_product["inventory_quantity"] > 0
+      'In Stock'
+    elsif self.stock_quantity > 0
+      '4 - 6 Weeks eta'
+    else
+      'Out of Stock'
+    end
+  end
+
   def show
     conn = Faraday.new("https://www.seeedstudio.com/rest/V1/product/multiple/skus", headers: {'Authorization': 'Bearer 2fcdf4zk3q50g0m0p0hsxlc5tfz3g4we', 'Content-Type': 'application/form-data'})
     
