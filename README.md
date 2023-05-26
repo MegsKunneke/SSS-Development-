@@ -38,3 +38,4 @@ Please ensure that you have the correct versions of Ruby and Rails installed, as
 Contributing
 
 Contributions to the Seeed Stock Sync App are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+# SSS-Development-
