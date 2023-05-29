@@ -7,10 +7,10 @@ Installation
 To run the Seeed Stock Sync App locally on your machine, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/MegsKunneke/Seeed-Stock-Sync.git
+   git clone https://github.com/MegsKunneke/SSS-Development-
 
 2. Install the required dependencies using Bundler:
-   cd Seeed-Stock-Sync
+   cd SSS-Development-
    bundle install
 
 3. Set up the database:
